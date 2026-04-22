@@ -1,0 +1,30 @@
+[project]
+name = "casino-reg-ie"
+version = "0.0.1"
+description = "gambling regulation in ireland api"
+authors = [{name = "dofahy"}]
+requires-python = ">=3.13"
+dependencies = [
+    "flask",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest"
+]
+
+[project.scripts]
+casino-reg-ie = "fe.cli.main:main"
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
