@@ -1,3 +1,10 @@
+<div align="center">
+  <img src="https://img.shields.io/badge/coverage-89%25-success" alt="Coverage 89%">
+  <a href="https://github.com/astral-sh/ruff">
+    <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Linted by Ruff">
+  </a>
+</div>
+
 # casino-reg-ie
 gambling regulation in ireland api
 
