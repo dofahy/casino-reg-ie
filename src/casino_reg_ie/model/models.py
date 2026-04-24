@@ -1,9 +1,12 @@
+from datetime import UTC, datetime
+
 from sqlalchemy import Column, DateTime, Integer, String, Text
-from datetime import datetime, UTC
-from be.db import Base
+
+from casino_reg_ie.db import Base
+
 
 class Regulation(Base):
-    __tablename__ = "regulations"
+    __tablename__ = 'regulations'
 
     id = Column(Integer, primary_key=True, index=True)
     source = Column(String, nullable=False)
