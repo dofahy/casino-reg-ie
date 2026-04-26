@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "casino-reg-ie"
-version = "0.0.2"
-description = "gambling regulation in ireland api"
+version = "0.0.3"
+description = "API for regulations on gambling in Ireland"
 authors = [{name = "dofahy"}]
 requires-python = ">=3.13"
 readme = "README.md"
@@ -102,4 +102,4 @@ fixture-parentheses = false
 mark-parentheses = false
 
 [tool.ruff.lint.isort]
-known-first-party = ["casino-reg-ie"]
+known-first-party = ["casino_reg_ie"]
