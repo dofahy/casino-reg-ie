@@ -5,9 +5,9 @@
   </a>
 </div>
 
-# casino-reg-ie
+# regulate-ie
 
-gambling regulation in ireland api
+API for regulations on gambling in Ireland
 
 data:
 
@@ -28,10 +28,10 @@ source .venv/bin/activate
 pip install -e .
 pip install -e ".[dev]"
 
-~/databases/bases/postgresql-18.3/bin/initdb -D ~/databases/data/pg18.3-casino-reg-ie --encoding=UTF8 --locale=en_IE.UTF-8
-kate ~/databases/pg18.3-casino-reg-ie.conf
-~/databases/bases/postgresql-18.3/bin/createdb -p 5433 casino_reg_ie
-~/databases/bases/postgresql-18.3/bin/psql -p 5433 -d casino_reg_ie
+~/databases/bases/postgresql-18.3/bin/initdb -D ~/databases/data/pg18.3-regulate-ie --encoding=UTF8 --locale=en_IE.UTF-8
+kate ~/databases/pg18.3-regulate-ie.conf
+~/databases/bases/postgresql-18.3/bin/createdb -p 5433 regulate_ie
+~/databases/bases/postgresql-18.3/bin/psql -p 5433 -d regulate_ie
 ```
 
 ### usage

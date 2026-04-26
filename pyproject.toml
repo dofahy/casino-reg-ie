@@ -3,7 +3,7 @@ requires = ["setuptools>=80"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "casino-reg-ie"
+name = "regulate-ie"
 version = "0.0.3"
 description = "API for regulations on gambling in Ireland"
 authors = [{name = "dofahy"}]
@@ -33,7 +33,7 @@ dev = [
 ]
 
 [project.scripts]
-casino-reg-ie = "casino_reg_ie.main:main"
+regulate-ie = "regulate_ie.main:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -42,7 +42,7 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.pytest.ini_options]
-addopts = "--cov=casino_reg_ie --cov-report=term-missing"
+addopts = "--cov=regulate_ie --cov-report=term-missing"
 testpaths = ["tests"]
 
 [tool.ruff]
@@ -102,4 +102,4 @@ fixture-parentheses = false
 mark-parentheses = false
 
 [tool.ruff.lint.isort]
-known-first-party = ["casino_reg_ie"]
+known-first-party = ["regulate_ie"]

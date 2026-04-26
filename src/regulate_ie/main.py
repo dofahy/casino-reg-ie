@@ -7,9 +7,9 @@ import logging
 
 from flask import Flask, jsonify, request
 
-from casino_reg_ie.core.logging import setup_logging
-from casino_reg_ie.db import SessionLocal, engine
-from casino_reg_ie.model.models import Base, Regulation
+from regulate_ie.core.logging import setup_logging
+from regulate_ie.db import SessionLocal, engine
+from regulate_ie.model.models import Base, Regulation
 
 setup_logging()
 

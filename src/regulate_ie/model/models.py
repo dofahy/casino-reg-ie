@@ -2,7 +2,7 @@ from datetime import UTC, datetime
 
 from sqlalchemy import Column, DateTime, Integer, String, Text
 
-from casino_reg_ie.db import Base
+from regulate_ie.db import Base
 
 
 class Regulation(Base):

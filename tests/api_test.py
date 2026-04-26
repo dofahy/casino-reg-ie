@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-os.environ['DB_NAME'] = 'casino_reg_ie_test'
+os.environ['DB_NAME'] = 'regulate_ie_test'
 import pytest
 
-from casino_reg_ie.db import Base, engine
-from casino_reg_ie.main import app
+from regulate_ie.db import Base, engine
+from regulate_ie.main import app
 
 
 @pytest.fixture(scope='module')
