@@ -6,18 +6,22 @@
 </div>
 
 # casino-reg-ie
+
 gambling regulation in ireland api
 
 data:
+
 - grab data from some sites
 - scraping automation on schedule (later)
 
 db:
+
 - postgresql
 - sqlalchemy
   - insert_reg_blob
 
-###  setup
+### setup
+
 ```
 python3 -m venv .venv
 source .venv/bin/activate
@@ -31,6 +35,7 @@ kate ~/databases/pg18.3-casino-reg-ie.conf
 ```
 
 ### usage
+
 ```
 curl -X POST http://localhost:5000/ingest -H "Content-Type: application/json" -d '{ "source": "source.ie", "content": "some data" }'
 
@@ -38,11 +43,20 @@ curl http://localhost:5000/regulations
 ```
 
 ### dev
+
 pre-commit install
+
 ```
 ruff check . --fix
 ruff format .
 
-pre-commit run --all-files
+./node_modules/.bin/prettier . --check
+./node_modules/.bin/prettier . --write
+
+pre-commit clean
+pre-commit run --all-files - v
+pre-commit run prettier --all-files
+pre-commit run ruff-format --all-files
 ```
+
 python -m ipdb file.py
