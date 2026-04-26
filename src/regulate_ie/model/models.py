@@ -6,7 +6,7 @@ from regulate_ie.db import Base
 
 
 class Regulation(Base):
-    __tablename__ = 'regulations'
+    __tablename__ = "regulations"
 
     id = Column(Integer, primary_key=True, index=True)
     source = Column(String, nullable=False)
