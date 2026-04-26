@@ -7,7 +7,7 @@
 
 # regulate-ie
 
-API for regulations on gambling in Ireland
+API for regulations in Ireland
 
 data:
 
@@ -60,3 +60,7 @@ pre-commit run ruff-format --all-files
 ```
 
 python -m ipdb file.py
+
+### actions
+
+.github/workflows/python-app.yml
