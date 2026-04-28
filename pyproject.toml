@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "regulate-ie"
 version = "0.0.3"
-description = "API for regulations on gambling in Ireland"
+description = "API for regulations in Ireland"
 authors = [{name = "dofahy"}]
 requires-python = ">=3.13"
 readme = "README.md"
@@ -24,6 +24,7 @@ dev = [
   #"fakeredis",
   #"freezegun",
   #"mypy",
+  "pip-tools",
   "pytest",
   "pytest-cov",
   "pytest-mock",
