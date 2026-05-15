@@ -22,6 +22,8 @@ db:
 
 ### setup
 
+run bash setup-dev.bash
+
 ```
 python3 -m venv .venv
 source .venv/bin/activate
@@ -31,6 +33,7 @@ pip install -e ".[dev]"
 ~/databases/bases/postgresql-18.3/bin/initdb -D ~/databases/data/pg18.3-regulate-ie --encoding=UTF8 --locale=en_IE.UTF-8
 kate ~/databases/pg18.3-regulate-ie.conf
 ~/databases/bases/postgresql-18.3/bin/createdb -p 5433 regulate_ie
+~/databases/bases/postgresql-18.3/bin/createdb -p 5433 regulate_ie_test
 ~/databases/bases/postgresql-18.3/bin/psql -p 5433 -d regulate_ie
 ```
 
